@@ -1,0 +1,262 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    
+  animation: slide-in 2s ease-in-out;
+  transition: background-color 4s ease-in-out; /* Add smooth transition */
+  }
+body.light-red {
+  background-color: #d65757;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+  animation: slide-in 3.5s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.transitiontrigger {
+  animation: fade-in 3s ease-in-out;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+  animation: slide-in-x 3s ease-in-out;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/*Other code*/
+.navbar {
+  background-color: #ede8e8;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 24px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+  top: 0;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 30px;
+  
+
+
+  animation: slide-in 2s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.transitiontrigger {
+  animation: fade-in 2s ease-in-out;
+}
+
+.fancy {
+    animation: slide-in 4s ease-in-out;
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  .transitiontrigger {
+    animation: fade-in 3s ease-in-out;
+  }
+.mainimage {
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+  animation: slide-in 3s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.transitiontrigger {
+  animation: fade-in 3s ease-in-out;
+}
+.fancyfirstletter {
+  animation: slide-in 2s ease-in-out;
+  font-size: 5rem;
+  font-family: "times new roman";
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.transitiontrigger {
+  animation: fade-in 2s ease-in-out;
+}
+@keyframes slide-in-bottom {
+  from {
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.transitiontrigger {
+  animation: fade-in 2s ease-in-out;
+}
+@keyframes slide-in-x {
+  from {
+    transform: translateX(-500%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.transitiontrigger {
+  animation: fade-in 2s ease-in-out;
+}
+.paragraph {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  animation: slide-in-x 3s ease-in-out;
+  height: 50px; /* Added height to make it shorter */
+  max-width: 20%;
+}
+.paragraph-wide {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  animation: slide-in-x 3s ease-in-out;
+  height: 50px; /* Added height to make it shorter */
+  max-width: 70%;
+}
+.content-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;  /* Center horizontally */
+}
+
+.continue-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out; /* Add smooth transition */
+}
+
+.continue-button.visible {
+  opacity: 1; /* Make visible when the class is added */
+}
