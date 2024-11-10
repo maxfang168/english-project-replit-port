@@ -4,10 +4,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    
+
   animation: slide-in 2s ease-in-out;
-  transition: background-color 4s ease-in-out; /* Add smooth transition */
-  }
+  transition: background-color 4s ease-in-out;
+  /* Add smooth transition */
+}
+
 body.light-red {
   background-color: #d65757;
 }
@@ -47,10 +49,12 @@ main {
   from {
     transform: translateY(-100%);
   }
+
   to {
     transform: translateY(0%);
   }
 }
+
 .transitiontrigger {
   animation: fade-in 3s ease-in-out;
 }
@@ -130,9 +134,9 @@ main {
   top: 0;
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   height: 30px;
-  
+
 
 
   animation: slide-in 2s ease-in-out;
@@ -142,29 +146,34 @@ main {
   from {
     transform: translateY(-100%);
   }
+
   to {
     transform: translateY(0%);
   }
 }
+
 .transitiontrigger {
   animation: fade-in 2s ease-in-out;
 }
 
 .fancy {
-    animation: slide-in 4s ease-in-out;
+  animation: slide-in 4s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
   }
 
-  @keyframes slide-in {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0%);
-    }
+  to {
+    transform: translateY(0%);
   }
-  .transitiontrigger {
-    animation: fade-in 3s ease-in-out;
-  }
+}
+
+.transitiontrigger {
+  animation: fade-in 3s ease-in-out;
+}
+
 .mainimage {
   border-radius: 10%;
   width: 200px;
@@ -176,13 +185,16 @@ main {
   from {
     transform: translateY(-100%);
   }
+
   to {
     transform: translateY(0%);
   }
 }
+
 .transitiontrigger {
   animation: fade-in 3s ease-in-out;
 }
+
 .fancyfirstletter {
   animation: slide-in 2s ease-in-out;
   font-size: 5rem;
@@ -193,57 +205,70 @@ main {
   from {
     transform: translateY(-200%);
   }
+
   to {
     transform: translateY(0%);
   }
 }
+
 .transitiontrigger {
   animation: fade-in 2s ease-in-out;
 }
+
 @keyframes slide-in-bottom {
   from {
     transform: translateY(200%);
   }
+
   to {
     transform: translateY(0%);
   }
 }
+
 .transitiontrigger {
   animation: fade-in 2s ease-in-out;
 }
+
 @keyframes slide-in-x {
   from {
     transform: translateX(-500%);
   }
+
   to {
     transform: translateX(0%);
   }
 }
+
 .transitiontrigger {
   animation: fade-in 2s ease-in-out;
 }
+
 .paragraph {
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: left;
   animation: slide-in-x 3s ease-in-out;
-  height: 50px; /* Added height to make it shorter */
+  height: 50px;
+  /* Added height to make it shorter */
   max-width: 20%;
 }
+
 .paragraph-wide {
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: left;
   animation: slide-in-x 3s ease-in-out;
-  height: 50px; /* Added height to make it shorter */
-  max-width: 70%;
+  max-width: 2000%;
 }
+
 .content-container {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center;  /* Center horizontally */
+  flex-direction: column;
+  /* Stack elements vertically */
+  align-items: center;
+  /* Center horizontally */
 }
 
 .continue-button {
@@ -253,10 +278,13 @@ main {
   transform: translate(-50%, -50%);
   font-size: 24px;
   color: white;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 1s ease-in-out; /* Add smooth transition */
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 1s ease-in-out;
+  /* Add smooth transition */
 }
 
 .continue-button.visible {
-  opacity: 1; /* Make visible when the class is added */
+  opacity: 1;
+  /* Make visible when the class is added */
 }
