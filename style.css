@@ -135,11 +135,8 @@ main {
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  height: 30px;
-
-
-
-  animation: slide-in 2s ease-in-out;
+  height: 40px;
+  animation: slide-in cubic-bezier(0.445, 0.05, 0.55, 0.95) ease-in-out;
 }
 
 @keyframes slide-in {
@@ -249,9 +246,7 @@ main {
   flex-direction: row;
   justify-content: left;
   animation: slide-in-x 3s ease-in-out;
-  height: 50px;
-  /* Added height to make it shorter */
-  max-width: 20%;
+  max-width: 40%;
 }
 
 .paragraph-wide {
@@ -260,9 +255,14 @@ main {
   flex-direction: row;
   justify-content: left;
   animation: slide-in-x 3s ease-in-out;
-  max-width: 2000%;
 }
-
+.paragraph-pagefill {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  animation: slide-in-x 3s ease-in-out;
+}
 .content-container {
   display: flex;
   flex-direction: column;
