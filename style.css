@@ -173,8 +173,6 @@ main {
 
 .mainimage {
   border-radius: 10%;
-  width: 200px;
-  height: 200px;
   animation: slide-in 3s ease-in-out;
 }
 
