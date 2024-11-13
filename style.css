@@ -245,7 +245,7 @@ main {
   justify-content: left;
   animation: slide-in-x 3s ease-in-out;
   max-width: 40%;
-  font-size: 2.5rem;
+  font-size: medium;
 }
 
 .paragraph-wide {
